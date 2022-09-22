@@ -6,7 +6,7 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/28 16:40:17 by hsaadi            #+#    #+#             */
-/*   Updated: 2022/09/22 14:47:51 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/09/22 14:54:24 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,7 @@
 # include <stdlib.h>
 
 /* ***** MACROS ***** */
-# define ERRNSA "Yo! Nothing to sort here👻👻"
-# define ERRDUP "There are duplicates among the args provided"
-# define ERRINT "Argument invalid! Must be only numbers!"
-# define ERRCAL "You've got Calloc problems!"
+
 # define ERROR "Error!"
 
 /* ***** ENUMS ***** */

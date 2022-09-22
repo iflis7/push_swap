@@ -5,6 +5,8 @@
 ### C ###
 # Prerequisites
 *.d
+.checker
+.push_swap
 
 # Object files
 *.o

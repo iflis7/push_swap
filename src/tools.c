@@ -6,7 +6,7 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 10:26:47 by hsaadi            #+#    #+#             */
-/*   Updated: 2022/09/22 09:34:55 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/09/22 14:55:41 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,11 @@ void	ft_isnum_space(char *str)
 		if ((str[i] >= '0' && str[i] <= '9') || str[i] == ' ' || str[i] == '-')
 		{
 			if (str[i] == '-' && !(str[i + 1] >= '0' && str[i + 1] <= '9'))
-				msg_error(ERRINT);
+				msg_error(ERROR);
 			i++;
 		}
 		else
-			msg_error(ERRINT);
+			msg_error(ERROR);
 	}
 }
 

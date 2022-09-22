@@ -6,7 +6,7 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 10:26:13 by hsaadi            #+#    #+#             */
-/*   Updated: 2022/09/22 12:05:58 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/09/22 14:55:07 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static void	init_stacks(t_stack **astack, t_stack **bstack, char **nums)
 {
 	*astack = ft_calloc(sizeof(t_stack), 1);
 	if (!*astack)
-		msg_error(ERRCAL);
+		msg_error(ERROR);
 	(*astack)->name = 'a';
 	(*astack)->slice = 11;
 	(*astack)->len = ints_count(nums);
@@ -25,7 +25,7 @@ static void	init_stacks(t_stack **astack, t_stack **bstack, char **nums)
 	(*astack)->sliceflag = (*astack)->slice;
 	*bstack = ft_calloc(sizeof(t_stack), 1);
 	if (!*bstack)
-		msg_error(ERRCAL);
+		msg_error(ERROR);
 	(*bstack)->name = 'b';
 	(*bstack)->flag = 0;
 }
@@ -48,7 +48,7 @@ int	no_duplicates(t_node *node, int nb)
 	while (node != NULL)
 	{
 		if (node->val == nb)
-			msg_error(ERRDUP);
+			msg_error(ERROR);
 		node = (*node).next;
 	}
 	return (True);
@@ -60,7 +60,7 @@ t_node	*new_val(int value, int index)
 
 	node = calloc(sizeof(t_node), 1);
 	if (!node)
-		msg_error(ERRCAL);
+		msg_error(ERROR);
 	node->val = value;
 	node->index = index;
 	node->prev = NULL;
