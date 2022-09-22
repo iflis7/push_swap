@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/08/15 07:33:50 by hsaadi            #+#    #+#              #
-#    Updated: 2022/09/22 10:42:10 by hsaadi           ###   ########.fr        #
+#    Created: 2022/09/22 15:02:29 by hsaadi            #+#    #+#              #
+#    Updated: 2022/09/22 15:02:29 by hsaadi           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,12 +45,12 @@ $(NAME): $(OBJS)
 
 
 clean:
-	@$(RM) $(OBJS) $(TEST_OBJS)
+	@$(RM) $(OBJS) $(OBJS_BONUS)
 	@make -C $(LIBFT_PATH) clean
 	@echo "$(YELLOW)Object files deleted!$(DEFAULT)💯"
 
 fclean:	clean
-	@$(RM) $(NAME) $(TEST_NAME) $(LIBFT)
+	@$(RM) $(NAME) $(BONUS_NAME) $(LIBFT)
 
 re:		fclean all
 
