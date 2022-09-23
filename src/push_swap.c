@@ -6,12 +6,11 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 10:07:31 by hsaadi            #+#    #+#             */
-/*   Updated: 2022/09/22 20:38:45 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/09/22 20:53:05 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
-
 
 int	main(int argc, char **argv)
 {
