@@ -6,7 +6,7 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 10:26:40 by hsaadi            #+#    #+#             */
-/*   Updated: 2022/09/18 14:53:39 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/09/22 20:16:28 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,6 @@ void	push(t_stack **stack, t_node *new)
 	{
 		(*stack)->node = new;
 		(*stack)->node->next = NULL;
-		(*stack)->min = new->val;
-		(*stack)->max = new->val;
 		(*stack)->node->prev = NULL;
 	}
 	else if ((*stack)->node != NULL && new)
@@ -58,7 +56,6 @@ void	push(t_stack **stack, t_node *new)
 		(*stack)->node->prev = NULL;
 	}
 	(*stack)->node->prev = NULL;
-	(*stack)->min = ft_min(new->val, (*stack)->min);
 	(*stack)->size++;
 }
 
@@ -72,7 +69,6 @@ t_node	*pop(t_stack **stack)
 		res = (*stack)->node;
 		(*stack)->node = (*stack)->node->next;
 		(*stack)->size--;
-		(*stack)->min = ft_min(res->val, (*stack)->min);
 		if ((*stack)->node != NULL)
 			(*stack)->node->prev = NULL;
 	}

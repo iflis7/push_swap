@@ -6,7 +6,7 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/28 16:40:17 by hsaadi            #+#    #+#             */
-/*   Updated: 2022/09/22 14:54:24 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/09/22 20:14:23 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,7 @@
 # include <stdlib.h>
 
 /* ***** MACROS ***** */
-
-# define ERROR "Error!"
+# define ERROR "Error\n"
 
 /* ***** ENUMS ***** */
 typedef enum e_bool
@@ -79,7 +78,8 @@ int					ints_count(char **tab);
 /* ***** TOOLS.c ***** */
 void				ft_isnum_space(char *str);
 void				max_min_check(char *nums);
-int					ft_min(int a, int b);
+// int					ft_min(int a, int b);
+void				check_shit(char *argv);
 
 /* ***** SORTING_SMALL.c ***** */
 t_bool				already_sorted(t_stack **stack);

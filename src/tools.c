@@ -6,7 +6,7 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 10:26:47 by hsaadi            #+#    #+#             */
-/*   Updated: 2022/09/22 14:55:41 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/09/22 20:38:56 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,16 +36,6 @@ void	max_min_check(char *nums)
 		msg_error(ERROR);
 }
 
-int	ft_min(int a, int b)
-{
-	if (a == b)
-		return (a);
-	else if (a < b)
-		return (a);
-	else
-		return (b);
-}
-
 t_bool	already_sorted(t_stack **stack)
 {
 	t_node	*temp;
@@ -61,4 +51,25 @@ t_bool	already_sorted(t_stack **stack)
 		&& ((*stack)->node->val > (*stack)->node->next->val))
 		swap_val(stack);
 	return (False);
+}
+
+void	check_shit(char *argv)
+{
+	int	j;
+
+	j = 0;
+	while (argv[j])
+	{
+		if ((argv[j] >= '0' && argv[j] <= '9') || argv[j + 1] == ' ')
+		{
+			if (argv[++j] == ' ')
+			{
+				while (argv[j] == ' ')
+					j++;
+				if (argv[j] >= '0' && argv[j] <= '9')
+					msg_error("Error\n");
+			}
+		}
+		j++;
+	}
 }
