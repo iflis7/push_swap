@@ -6,7 +6,7 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 10:26:40 by hsaadi            #+#    #+#             */
-/*   Updated: 2022/09/22 20:16:28 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/10/02 14:53:48 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	print_stack(t_stack *stack)
 	printf("Stack-%c: \n", stack->name);
 	while (temp != NULL)
 	{
-		printf("%d -> ", temp->val);
+		printf("%d -> ", temp->index);
 		temp = temp->next;
 	}
 	printf("\n");

@@ -6,7 +6,7 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 12:53:56 by hsaadi            #+#    #+#             */
-/*   Updated: 2022/09/21 19:58:49 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/10/04 17:04:04 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@ void	smaller_from_a_to_b(t_stack *astack, t_stack *bstack)
 	while (node != NULL)
 	{
 		astack->proch = smaller_number_is_in_range(astack)->index;
+		printf("astack->proch ::==> %d \n", astack->proch);
 		index = num_indexer(astack, astack->proch);
+		printf("index::==> %d \n", index);
 		while (node->index != astack->proch)
 		{
 			if (index < ((astack->size) / 2))
@@ -43,7 +45,7 @@ static void	flag_decrement(t_stack *astack, t_stack *bstack)
 {
 	if (bstack->flag == 1)
 	{
-		bstack->len -= 2;
+		bstack->len -= 1;
 		bstack->flag = 0;
 		swap_val(&astack);
 	}

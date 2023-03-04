@@ -1,5 +1,29 @@
 # `Push_Swap`
 
+<h1 align="center">
+	📖 Push_Swap
+</h1>
+
+<p align="center">
+	<b><i>Sort data on a stack</i></b><br>
+</p>
+
+<p align="center">
+	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/iflis7/push_swap?color=lightblue" />
+	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/iflis7/push_swap?color=critical" />
+	<img alt="Code language count" src="https://img.shields.io/github/languages/count/iflis7/push_swap?color=yellow" />
+	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/iflis7/push_swap?color=blue" />
+	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/iflis7/push_swap?color=green" />
+</p>
+
+<h3 align="center">
+	<a href="#%EF%B8%8F-about">About</a>
+	<span> · </span>
+	<a href="#%EF%B8%8F-usage">Usage</a>
+	<span> · </span>
+	<a href="#-testing">Testing</a>
+</h3>
+
 This project will make you sort data on a stack, with a limited set of instructions, using
 the lowest possible number of actions. To succeed you’ll have to manipulate various
 types of algorithms and choose the most appropriate solution (out of many) for an
@@ -64,4 +88,3 @@ All errors like: wrong commands,  permission to files and etc, need be handle.
 [Tester](https://github.com/LeoFu9487/push_swap_tester)
 
 [![hsaadi's 42 push_swap Score](https://badge42.vercel.app/api/v2/cl5s2p211013909jutf782quk/project/2593964)](https://github.com/JaeSeoKim/badge42)
-

@@ -6,7 +6,7 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 12:53:56 by hsaadi            #+#    #+#             */
-/*   Updated: 2022/09/18 17:48:23 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/10/04 17:07:37 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,13 @@ t_node	*smaller_number_is_in_range(t_stack *stack)
 	j = stack->size;
 	i = 0;
 	while (first != NULL && ((first->index <= ((stack->len / 2) - stack->slice))
-			|| (first->index >= ((stack->len / 2) + stack->slice))))
+		|| (first->index >= ((stack->len / 2) + stack->slice))))
 	{
 		i++;
 		first = first->next;
 	}
 	while (last != NULL && ((last->index <= ((stack->len / 2) - stack->slice))
-			|| (last->index >= ((stack->len / 2) + stack->slice))))
+		|| (last->index >= ((stack->len / 2) + stack->slice))))
 	{
 		j--;
 		last = last->prev;

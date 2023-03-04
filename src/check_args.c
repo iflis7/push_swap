@@ -6,7 +6,7 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 10:26:13 by hsaadi            #+#    #+#             */
-/*   Updated: 2022/09/22 18:07:33 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/10/02 14:52:57 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static void	init_stacks(t_stack **astack, t_stack **bstack, char **nums)
 	if (!*astack)
 		msg_error(ERROR);
 	(*astack)->name = 'a';
-	(*astack)->slice = 11;
+	(*astack)->slice = 5;
 	(*astack)->len = ints_count(nums);
 	if ((*astack)->len >= 300)
 		(*astack)->slice = 30;

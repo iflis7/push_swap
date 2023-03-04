@@ -6,7 +6,7 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 10:07:31 by hsaadi            #+#    #+#             */
-/*   Updated: 2022/09/22 21:15:24 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/10/04 17:06:49 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int	main(int argc, char **argv)
 		nums = &argv[1];
 	}
 	store_in_stack(&astack, &bstack, nums, argc);
+	print_stack(astack);
 	if (already_sorted(&astack))
 		exit(0);
 	if (astack->size == 3)
@@ -36,6 +37,7 @@ int	main(int argc, char **argv)
 		sorting_five(&astack, &bstack);
 	else
 		sorting_hundreds(&astack, &bstack);
+	print_stack(bstack);
 	free_list(astack);
 	free_list(bstack);
 }
